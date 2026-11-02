@@ -14,7 +14,7 @@ Open `index.html` in a browser to view it locally.
 
 ## Pages
 - `index.html` — Home: WebGL hero, 9 live capability demos, generative showreel, process, showcase image + Unreal cinematic, client logos, team, industries, studios map
-- `about.html` — About us: core team, studio photos, capabilities, process, culture, tools
+- `about.html` — About us: core team with portraits, studio photos, capabilities, process, culture, tools
 - `services.html` — 9 services, each with a live animation (3 are real-time 3D scenes)
 - `industries.html` — 6 industries with client logos
 - `contact.html` — contact details and enquiry form
@@ -43,7 +43,7 @@ python3 _source/build.py
 
 Then commit and push; GitHub Pages republishes automatically.
 
-Before launch: confirm the enquiry email (`info@leocreativestudios.com`), add a phone/WhatsApp number in `content.py` (the WhatsApp button appears once set), and add team portraits to `assets/img/team/`.
+Before launch: confirm the enquiry email (`info@leocreativestudios.com`), add a phone/WhatsApp number in `content.py` (the WhatsApp button appears once set), and update team portraits in `assets/img/team/` if needed.
 
 ## Contact form
 Without a form service, the enquiry form opens the visitor's email app with the brief pre-filled. To receive enquiries directly, set `form_endpoint` in `content.py` to a Formspree (or similar) URL and rebuild.

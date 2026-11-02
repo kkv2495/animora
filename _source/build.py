@@ -214,7 +214,7 @@ def build_home():
       {demo(s["demo"])}<div class="lab-info"><span class="mono">{i+1:02d}</span><h3>{s["short"]}</h3><p>{s["tagline"]}</p></div></a>''' for i, s in enumerate(SERVICES))
     inds = "".join(f'<a class="ind-row" href="industries.html#{d["slug"]}" data-color="{PALETTES[d["seed"]%5][0]}"><span class="mono">{i+1:02d}</span><h3>{d["name"]}</h3><p>{d["pitch"]}</p><span class="arrow">→</span></a>' for i, d in enumerate(INDUSTRIES))
     studio_cards = "".join(f'<div class="studio-card reveal"><span class="mono">0{i+1} / {s["label"]}</span><h3>{s["city"]}</h3><p>{s["address"]}</p></div>' for i, s in enumerate(STUDIOS))
-    team_strip = "".join(f'<a class="team-mini reveal" href="about.html#team"><div class="team-photo" style="--c:{PALETTES[i][0]};--c2:{PALETTES[i][1]}">' + (f'<img src="assets/img/team/{m["photo"]}" alt="">' if m["photo"] else f'<span class="mono-av" aria-hidden="true">{m["name"][0]}</span>') + f'</div><div><h3>{m["name"]}</h3><p>{m["role"]}</p></div></a>' for i, m in enumerate(TEAM))
+    team_strip = "".join(f'<a class="team-mini reveal" href="about.html#team"><div class="team-photo" style="--c:{PALETTES[i][0]};--c2:{PALETTES[i][1]}">' + (f'<img src="assets/img/team/{m.get("avatar") or m["photo"]}" alt="{E(m["name"])}">' if m["photo"] else f'<span class="mono-av" aria-hidden="true">{m["name"][0]}</span>') + f'</div><div><h3>{m["name"]}</h3><p>{m["role"]}</p></div></a>' for i, m in enumerate(TEAM))
 
     body = f'''
 <div class="loader" aria-hidden="true"><div class="loader-inner"><div class="flipbook"><i></i></div><div class="loader-count mono"><span id="lc">000</span> / 100</div><p class="mono">Rendering frames…</p></div><div class="loader-bar"><i></i></div></div>

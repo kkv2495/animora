@@ -129,13 +129,13 @@ INDUSTRIES = [
 TEAM = [
     {"name": "Rahul", "role": "Head of Production & Animation", "exp": "8 years experience",
      "bio": "Rahul leads our production and animation operations, ensuring every project meets creative and technical expectations. From planning production workflows to guiding artists and maintaining quality, he turns creative concepts into polished final outputs.",
-     "photo": ""},   # TODO add assets/img/team/rahul.jpg and put the file name here
-    {"name": "Karthikeyan", "role": "Head of Technology & Pipeline Design", "exp": "5 years experience",
-     "bio": "Karthikeyan drives our technical workflows and production pipelines. He focuses on building efficient processes, integrating tools and technologies, and ensuring smooth collaboration between creative and development teams.",
-     "photo": ""},
+     "photo": "rahul.jpg", "avatar": "rahul-avatar.jpg"},   # TODO add assets/img/team/rahul.jpg and put the file name here
+    {"name": "Karthikeya", "role": "Head of Technology & Pipeline Design", "exp": "5 years experience",
+     "bio": "Karthikeya drives our technical workflows and production pipelines. He focuses on building efficient processes, integrating tools and technologies, and ensuring smooth collaboration between creative and development teams.",
+     "photo": "karthikeya.jpg", "avatar": "karthikeya-avatar.jpg"},
     {"name": "Prudhvi", "role": "Head of Marketing", "exp": "8 years experience",
      "bio": "Prudhvi leads our marketing, client relationships and business development. He connects creative capabilities with client requirements, understands project objectives and builds meaningful partnerships that help the studio grow.",
-     "photo": ""},
+     "photo": "prudhvi.jpg", "avatar": "prudhvi-avatar.jpg"},
 ]
 
 CULTURE = [

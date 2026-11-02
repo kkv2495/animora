@@ -867,3 +867,9 @@ canvas.d3{position:absolute;inset:0;width:100%;height:100%;z-index:1;display:non
 .sg-item:hover img{transform:scale(1.06)}
 .js .sg-item.reveal{transition-delay:calc(var(--i)*.08s)}
 @media (max-width:560px){.sg-grid{grid-template-columns:1fr}}
+
+/* ---------- v6: team portraits ---------- */
+.team-photo img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 30%;transition:transform 1s var(--ease-out)}
+.team-card:hover .team-photo img{transform:scale(1.04)}
+.team-mini .team-photo{position:relative;overflow:hidden;border:2px solid rgba(244,239,230,.15)}
+.team-mini .team-photo img{object-position:50% 50%}
